@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="apptitle">
+                <div class='menu'></div>
+                <h1>Tabs! - Hate Paying Them</h1>
+                <div class='search'></div>
+            </header>
+            <nav class="tabs">
+                <ul>
+                    <li class="thirds"><a href="#home" data-role="pagelink" class="activetab"><img href="#home" class="icon" src="img/home.svg" />HOME</a></li>
+                    <li class="thirds"><a href="#two" data-role="pagelink"><img href="#two" class="icon" src="img/map.svg" />MAPPING</a></li>
+                    <li class="thirds"><a href="#three" data-role="pagelink"><img href="#three" class="icon" src="img/person.svg" />CONTACT</a></li>
+                </ul>
+                <div class="swoosh">
+
+                </div>
+            </nav>
+
+            <section data-role="page" id="home" class="active">
+                <h2>My App</h2>
+                <p>I don't know how awesome this app is but I've spent quite a bit of time to get it to work in a style similar to the material design language Google introduced in Lollipop. I chose to go this route after researching the various UI guidelines for Barb's class last week.</p>
+                <p>The exiting page should fly-out to the right and the new page will fade in just as the exiting page reaches the edge of the screen.
+                <h3>Hopes &amp; Difficulties</h3>
+                <p>Clicking on each tab results in the bar below transitioning to the active tab and the opacity of the active tab changes as well. I spent an ungodly amount of time working on the timing of transitions and I'm still not sure they're working they way I want.  It does work though.  </p>
+            </section>
+            
+            <section data-role="page" id="two"class="hide">
+                <h2>To the Maps!!</h2>
+                <p>Dynamically created map stuff.</p>
+                <img class="map"/>
+            </section>
+            <section data-role="page" id="three" class="hide">
+                <h2>Contact Information</h2>
+              
+            </section>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/hammer.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+    </body>
+</html>

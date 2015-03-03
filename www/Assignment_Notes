@@ -1,0 +1,97 @@
+***************************************
+	MY TODO
+**************************************
+[] Make app title and nav fixed ??
+		
+[X]		body text size
+
+[X] Splashscreen ??
+[X] App Icon
+[X] HammerJS
+
+
+
+
+
+Handle the 300ms delay ,to support the older browsers, and use the touchend event, if supported, instead of click. Use the Google Maps static API, Cordova Geolocation API, and Cordova Contacts API
+
+ 
+
+Your interface has the following requirements:
+
+[X] 1. Three tabs which each load one of the three screens at the top of the screen.
+[X] 2. Only one of the three screen pages should be visible at a time.
+[X] 3. There needs to be a CSS transition used to move the pages on and off the visible surface of the       device.
+[X] 4. There must be a consistent monochromatic colour scheme across the entire app (Black/dark-grey, white/light-grey, and one hue).
+[X] 5. Use TWO font stacks for the entire app. (The user will only ever see two font-families)
+[X] 6. The 300ms delay for touch events must be eliminated. Write the code to handle touch_end on the      tabs.
+[X] 7. Each tab must have its own icon. The icons can be web fonts or SVG images.
+[X] 8. Page one (home) should have a custom title and a paragraph talking about how awesome your app is.
+[X] 9. Page two should display a Google Static map with a marker for the users current location. The map can be displayed on a canvas tag or as an img tag.
+[X] 10. Page three will fetch and display a random contact from the contacts in the device. This will use the Cordova Contacts api.
+
+ 
+
+Looking Ahead: Think about how you would send the latitude, longitude, as well as a copy of the image, to a PHP page on a webserver through an AJAX call.
+
+ 
+
+Save your finished Cordova Project Folder as a GitHub Repo and submit the link to your main repo page:
+
+Eg: http://www.github.com/abcd0001/webapp1/ (Links to an external site.)
+
+Also install your finish APK on one of the Samsung Android devices from the cabinet. 
+
+Add a note to your submission that mentions which phone you have installed your app on.
+
+ 
+
+Adding Contacts
+
+Many of the devices in the lab will not have any contacts added to them. If you want to skip manually adding contacts to the devices that you use for testing and installing then here is a small app that I wrote which will add 16 contacts with random home and mobile phone numbers. - CordovaApp-debug.apkView in a new window
+
+You can install this apk from the command line with the adb install command.
+
+********************************************
+				DIARY
+*******************************************
+Feb 27, 2015 2hrs
+	- decided that I would keep a log or diary. 
+	- this is the third re-write.
+	- Changed layout to use vh.... hopefully this will translate
+	- Scaling of fonts - although I don't have Roboto
+	- Edited the notes
+
+Mar 1, 2015 3 hrs
+	- worked on icons... had to redraw, make adjustments to scale.
+	- had a helluva time getting the icons to align with tab labels.  Still not sure they actually do or if it's a fluke.
+	- started the map... static map draws alright... 
+	- hoping to get contacts done tomorrow with clean up on  Monday.  
+	- still need to nail down a proper fly out/fade exit... pretty weak as is 
+	- made hi-res splashscreens... these will rock.. what color!
+
+Mar 1, 2015 14:25 - 16:00
+	- Worked on the static map.
+	- seems to work fine
+	- Set up hammerjs... should have been the first thing i did. Could have build my navigation model around it instead of clicks.  damn.. wanted to integrate swipes to the right and left.... next rev
+
+Mar 2, 2015 01:30 - 04:30
+	- fixed tapping on the same page bug
+	- flicker gone and fly/fade seem to be working.  phew!
+	- Contacts...
+	- Contacts dont seem to be working..... throwing error at ContactFindOptions()
+
+Mar 2, 2015 08:00 - 10:00
+	- was having trouble getting the contacts working....
+	- built an app with just contact code and it worked as promised.... curious I wonder if it has something to do with me moving files around after adding plugins etc. 
+	- creating new project and copying in code to see if that works. 
+	- turns out that the second batch of code I wrote works so using that..Imagine, code that doesn't work.
+
+Mar 2, 2015 21:00 - 23:45
+	- Still screwing around with contacts... 
+	- when looking for an array length inside an array or object -> matches[x].phoneNum[p].length... another hour and half gone. 
+
+Mar 3, 2015 08:00 - ??
+	- Making small adjustments... Font size etc.  Not sure it's worth it at this point, being very picky.   
+	- Everything seems to work but it could be better.  Looks like shit on MOTO X first gen... hoped the vh & vw would have helped. 
+	- Done... hopefully it works on an S5!
